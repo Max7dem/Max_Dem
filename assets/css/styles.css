@@ -47,17 +47,30 @@ header p {
 .conteiner .box {
 	width: 33.3333%;
 	height: 100%;
+	padding: 120px 0 0 60px;
 }
 
-.conteiner :first-child {
+.conteiner .box:first-child {
 	background-color: #3e3c3d;
 }
 
-.conteiner :nth-child(2) {
+.conteiner .box:nth-child(2) {
 	background-color: #353334;
 }
 
-.conteiner :last-child {
+.conteiner .box:last-child {
 	background-color: #201e1f;
 }
+
+.conteiner .box p {
+	color: #c18d8c;
+	font-size: 14px;
+}
+
+.conteiner .box p:last-child {
+	color: white;
+	font-size: 18px;
+}
+
+
 
