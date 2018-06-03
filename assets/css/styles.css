@@ -34,3 +34,14 @@ header p {
 	color: white;
 	font-size: .7em;
 }
+
+.conteiner {
+	width: 900px;
+	height: 300px;
+}
+
+.conteiner .box {
+	width: 33.3333%;
+	height: 100%;
+	
+}
