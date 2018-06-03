@@ -9,3 +9,28 @@ body {
 	background-color: #de8a89;
 	padding: 100px 300px;
 }
+
+header nav ul {
+	display: flex;
+}
+
+header nav ul li {
+	list-style: none;
+	margin-right: 50px
+}
+
+header nav ul li:first-child a:first-child {
+	color: white;
+}
+
+header nav ul li a {
+	color: #ecb9b8;
+	font-size: 3em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+header p {
+	color: white;
+	font-size: .7em;
+}
