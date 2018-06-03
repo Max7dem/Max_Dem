@@ -42,6 +42,8 @@ header p {
 	height: 250px;
 	display: flex;
 	margin-top: 40px;
+	position: relative;
+	box-shadow: 0 4px 10px 4px rgba(0, 0, 0, .2);
 }
 
 .conteiner .box {
@@ -70,6 +72,41 @@ header p {
 .conteiner .box p:last-child {
 	color: white;
 	font-size: 18px;
+	margin-top: 6px;
+}
+
+.box:nth-child(1)::before {
+	content: "Start";
+	width: 200px;
+	height: 30px;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 12px;
+	border-radius: 4px;
+	text-transform: uppercase;
+	background-color: #131313;
+	position: absolute;
+	bottom: -25px;
+	left: 14px;
+}
+
+.conteiner::before {
+	content: "";
+	width: 80px;
+	height: 80px;
+	background-color: #ecb9b8;
+	position: absolute;
+	left: -80px;
+}
+
+.conteiner::after {
+	content: "";
+	width: 80px;
+	height: 80px;
+	background-color: #ecb9b8;
+	position: absolute;
+	right: -80px;
 }
 
 
