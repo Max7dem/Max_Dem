@@ -29,6 +29,11 @@ header nav ul li a {
 	font-weight: bold;
 	text-decoration: none;
 	text-transform: uppercase;
+	transition: .2s;
+}
+
+header nav ul li a:hover {
+	color: #eecac9;
 }
 
 header p {
@@ -75,20 +80,23 @@ header p {
 	margin-top: 6px;
 }
 
-.box:nth-child(1)::before {
-	content: "Start";
-	width: 200px;
-	height: 30px;
-	color: white;
-	text-align: center;
-	padding-top: 20px;
-	font-size: 12px;
-	border-radius: 4px;
-	text-transform: uppercase;
-	background-color: #131313;
+.conteiner .box:nth-child(2)::before {
+	content: "";
+	border: 5px solid transparent;
+	border-right: 5px solid #855352;
 	position: absolute;
-	bottom: -25px;
-	left: 14px;
+	left: -50px;
+	top: 35px;
+}
+
+.conteiner .box:nth-child(2)::after {
+	content: "";
+	border: 5px solid transparent;	
+	border-left: 5px solid #855352;
+	position: absolute;
+	right: -50px;
+	top: 35px;
+	z-index: 1;
 }
 
 .conteiner::before {
@@ -97,7 +105,13 @@ header p {
 	height: 80px;
 	background-color: #ecb9b8;
 	position: absolute;
+	transition: .3s;
 	left: -80px;
+}
+
+.conteiner:hover::before {
+	background-color: #eecac9;
+	cursor: pointer;
 }
 
 .conteiner::after {
@@ -106,8 +120,48 @@ header p {
 	height: 80px;
 	background-color: #ecb9b8;
 	position: absolute;
+	transition: .3s;
 	right: -80px;
 }
 
+.conteiner:hover::after {
+	background-color: #eecac9;
+	cursor: pointer;
+}
+
+.start {
+	width: 200px;
+	height: 50px;
+	padding-top: 18px;
+	text-align: center;
+	border-radius: 4px;
+	background-color: #131313;
+	position: relative;
+	top: -25px;
+	left: 18px;
+	transition: .2s;
+}
+
+.start:hover {
+	top: -30px;
+}
+
+.start p {
+	color: white;
+	font-size: 12px;
+	text-transform: uppercase;
+}
 
 
+.box:nth-child(1)::before {
+	width: 200px;
+	height: 30px;
+	text-align: center;
+	padding-top: 20px;
+	border-radius: 4px;
+	text-transform: uppercase;
+	background-color: #131313;
+	position: absolute;
+	bottom: -25px;
+	left: 14px;
+}
