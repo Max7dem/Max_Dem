@@ -16,7 +16,7 @@ header nav ul {
 
 header nav ul li {
 	list-style: none;
-	margin-right: 50px
+	margin-right: 45px
 }
 
 header nav ul li:first-child a:first-child {
@@ -28,20 +28,36 @@ header nav ul li a {
 	font-size: 3em;
 	font-weight: bold;
 	text-decoration: none;
+	text-transform: uppercase;
 }
 
 header p {
 	color: white;
-	font-size: .7em;
+	font-size: 13px;
+	margin-top: 10px;
 }
 
 .conteiner {
-	width: 900px;
-	height: 300px;
+	width: 700px;
+	height: 250px;
+	display: flex;
+	margin-top: 40px;
 }
 
 .conteiner .box {
 	width: 33.3333%;
 	height: 100%;
-	
 }
+
+.conteiner :first-child {
+	background-color: #3e3c3d;
+}
+
+.conteiner :nth-child(2) {
+	background-color: #353334;
+}
+
+.conteiner :last-child {
+	background-color: #201e1f;
+}
+
